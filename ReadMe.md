@@ -9,4 +9,6 @@ Made with ❤️ 2021 All Rights Reserved. by edgar-cuppari.dev
 
 #### ScreenShot's
 
-[logo]:https://raw.githubusercontent.com/DeepCoreB4/deepcore-og-image-main/master/public/Screenshot_V-Call_App.png "Logo Title Text 2"
+[logo]https://raw.githubusercontent.com/DeepCoreB4/deepcore-og-image-main/master/public/Screenshot_V-Call_App.png "Logo Title Text 2"
+
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=deepcoreb4)](https://github.com/deepcoreb4/github-readme-stats)
