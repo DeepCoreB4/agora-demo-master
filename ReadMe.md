@@ -9,6 +9,7 @@ Made with ❤️ 2021 All Rights Reserved. by edgar-cuppari.dev
 
 #### ScreenShot's
 ![alt text][logo]
+
 [logo]:https://raw.githubusercontent.com/DeepCoreB4/deepcore-og-image-main/master/public/Screenshot_V-Call_App.png"
 
 #### Stats
