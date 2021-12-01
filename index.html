@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>V-Call App</title>
+    <!--Hier ist der link zum script file / VideoCall CameraIcon -->
+    <script
+      src="https://kit.fontawesome.com/c8500fcdd6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // confetti scrip starten...
+
+      const start = () => {
+        setTimeout(function () {
+          confetti.start();
+        }, 1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
+      };
+
+      //  zum stoppen der confetti Animation
+
+      const stop = () => {
+        setTimeout(function () {
+          confetti.stop();
+        }, 5000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
+      }; 
+      // mit der Funktion start()/stop(), können wir die Funktion abrufen.
+      start();
+      stop(); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
+    </script>
+    <link href="./styles/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <center>
+        <header>
+          <i class="fas fa-camera"></i> V-Call App - Nice to See you
+        </header>
+      </center>
+
+      <section class="holder holder--video">
+        <div id="remote" class="holder--video-remote waiting"></div>
+        <div id="me" class="holder--video-me"></div>
+      </section>
+      <section class="holder holder--options">
+        <button class="holder--options-option" id="btnCam">
+          <i class="fas fa-video"></i>
+          Kamera ein/aus
+        </button>
+        <button class="holder--options-option" id="btnMic">
+          <i class="fas fa-microphone"></i>
+          Mic ein/aus
+        </button>
+        <button class="holder--options-option hidden" id="btnStop">
+          <i class="fas fa-window-close"></i> Verlassen
+        </button>
+        <button class="holder--options-option" id="btnStart">
+          <i class="fas fa-plug"></i> Beitreten
+        </button>
+      </section>
+    </div>
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.2.1.js"></script>
+    <!--Hier ist der link zum script file / confetti.js -->
+    <script src="confetti.js"></script>
+    <!--Agora-VideoCall Script -->
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+* {
+  font-family: Poppins;
+  src: url(PomfretV2-Regular.woff);
+  color:antiquewhite;
+  margin: 0;
+  padding-left: 20;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+} 
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  width: 100%;
+  background: #1a202c;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
+}
+
+.container header {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.container header i {
+  color: #0056f5;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.holder {
+  border-radius: 15px;
+  background: #0c1214;;
+  width: 100%;
+  min-height: 50px;
+  border: 0px solid #333;
+}
+
+.holder--video {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  min-height: 500px;
+  color: #fee440;
+}
+
+.holder--video-me {
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border: 3px solid rgba(250, 215, 170, 0.692);
+  border-radius: 15px;
+  background: #efefef;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-style: italic;
+}
+
+.holder--video-me.connecting:before {
+  content: "Connecting...";
+}
+
+.holder--video-remote {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 500px;
+}
+
+.holder--video-remote.waiting:before {
+  content: "Waiting...";
+}
+
+.holder--video-remote.full:before {
+  content: "Room is full!";
+}
+
+.holder--video-remote video {
+  position: relative !important;
+  display: block;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.holder--options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.holder--options-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: none;
+  outline: none;
+  border: 0px;
+  background: none;
+  color: #fff;
+}
+
+.holder--options-option i {
+  background: #1a202c;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  width: 64px;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgb(245, 160, 111);
+  -webkit-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.holder--options-option.active i {
+  color: #0056f5;
+}
+/*# sourceMappingURL=styles.css.map */
