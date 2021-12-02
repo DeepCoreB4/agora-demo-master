@@ -17,6 +17,22 @@ body {
   width: 100%;
   background: #1a202c;
 }
+input[type='password'] {  
+  width: 100%;  
+  box-sizing: border-box;  
+  height: 55px;  
+  display: inline-block;  
+  border: 3px solid #2F96EF;  
+  border-radius: 5px;  
+  padding: 0 15px;  
+  margin: 10px 0;  
+  transition: .2s;  
+}  
+input[type='password']:focus {  
+  outline: none;  
+   -moz-outline: none;  
+   -webkit-outline: none;  
+}
 
 .container {
   display: -webkit-box;
@@ -172,5 +188,57 @@ body {
 
 .holder--options-option.active i {
   color: #0056f5;
+}
+.d-flex { display: flex; }
+.justify-center { justify-content: center; }
+select.form-control {
+  -webkit-appearance: menulist-button;
+  height: 55px;
+}
+.form-control:focus {
+  outline: none;
+}
+.form-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+  height: 56px;
+}
+
+.form-control-placeholder {
+  position: absolute;
+  bottom: 1.25em;
+  left: 0;
+  padding: 7px 0 0 13px;
+  transition: all 250ms;
+  opacity: 0.5;
+}
+span.error-msg {
+  color: rgb(224, 32, 32); 
+  font-size: 12px; 
+  font-weight: 500; 
+  transition: all .5s;
+  opacity: 0;
+}
+.form-control:focus + .form-control-placeholder,
+.form-control:valid:not(:placeholder-shown) + .form-control-placeholder,
+.form-control:not(:placeholder-shown) + .form-control-placeholder,
+.form-control:invalid:not(:placeholder-shown) + .form-control-placeholder{
+  font-size: 75%;
+  transform: translate3d(0, -100%, 0);
+  opacity: 1;
+}
+
+.form-control:invalid:focus {
+  border-bottom: 2px solid #cfcfcf;  
+}
+.showpwd {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  cursor: pointer;
+}
+
+hr {
+  margin: 50px auto;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -1,49 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>V-Call App</title>
-    <!--Hier ist der link zum script file / VideoCall CameraIcon -->
-    <script
-      src="https://kit.fontawesome.com/c8500fcdd6.js"
-      crossorigin="anonymous"
-    ></script>
-    
-    <link href="./styles/styles.css" rel="stylesheet" />
-  </head>
-  <body>
-    <section class="container">
-      <center>
-        <header>
-          <i class="fas fa-camera"></i> V-Call App - Nice to See you
-        </header>
-      </center>
-      <section class="holder holder--video">
-        <div id="remote" class="holder--video-remote waiting"></div>
-        <div id="me" class="holder--video-me"></div>
-      </section>
-      <section class="holder holder--options">
-        <button class="holder--options-option" id="btnCam">
-          <i class="fas fa-video"></i>
-          Kamera ein/aus
-        </button>
-        <button class="holder--options-option" id="btnMic">
-          <i class="fas fa-microphone"></i>
-          Mic ein/aus
-        </button>
-        <button class="holder--options-option hidden" id="btnStop">
-          <i class="fas fa-window-close"></i> Verlassen
-        </button>
-        <button class="holder--options-option" id="btnStart">
-          <i class="fas fa-plug"></i> Beitreten
-        </button>
-      </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>V-Call App</title>
+  <!--Hier ist der link zum script file / VideoCall CameraIcon -->
+  <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
+  <!--Passwort Protection / Snippet start/.. this is right written/ just ignore this "<!--" crap of shit-->
+  <script language="JavaScript">
+    <!--hide 
+      
+    var password;
+    var pass1="e8996@9803a";
+
+    password=prompt('Du brachst ein Passwort um die V-CALL APP benutzen zu können!', ' ');
+
+    function showPwd(id, el) {
+      let x = document.getElementById(id);
+        if (x.type === "password") {
+          x.type = "text";
+          el.className = 'fa fa-eye-slash showpwd';
+        } else {
+          x.type = "password";
+          el.className = 'fa fa-eye showpwd';
+        }
+    }
+    if (password==pass1)
+      alert('Yow Bre, Click OK to enter V-Call APP!!');
+    else {
+      window.location="https://v-call.vercel.app/";
+      alert('Hei Bro, Wrong/ falsches Password!!');
+    }
+  //-->
+  </script>
+  <!--Passwort Protection Snippet ENDE -->
+  <link rel="shortcut icon" href="./styles/favicon.ico">
+  <link href="./styles/styles.css"rel="stylesheet" />
+  <style>      
+    input[type='password'] {  
+      width: 100%;  
+      box-sizing: border-box;  
+      height: 55px;  
+      display: inline-block;   
+      border-radius: 5px;  
+      padding: 15px;  
+      margin: 10px 0;  
+      transition: .2s; 
+      align-content: center; 
+    }  
+    input[type='password']:focus {  
+      outline: none;  
+      -moz-outline: none;  
+      -webkit-outline: none;  
+    }  
+    </style>
+</head>
+<body>
+  <section class="container">
+    <center>
+      <header>
+        <i class="fas fa-camera"></i> V-Call App - Nice to See you
+      </header>
+    </center>
+    <section class="holder holder--video">
+      <div id="remote" class="holder--video-remote waiting"></div>
+      <div id="me" class="holder--video-me"></div>
+    </section>
+    <section class="holder holder--options">
+      <button class="holder--options-option" id="btnCam">
+        <i class="fas fa-video"></i>
+        Kamera ein/aus
+      </button>
+      <button class="holder--options-option" id="btnMic">
+        <i class="fas fa-microphone"></i>
+        Mic ein/aus
+      </button>
+      <button class="holder--options-option hidden" id="btnStop">
+        <i class="fas fa-window-close"></i> Verlassen
+      </button>
+      <button class="holder--options-option" id="btnStart">
+        <i class="fas fa-plug"></i> Beitreten
+      </button>
+    </section>
+    <br>
+    <br>
+    <br>
+    <center>⫹ 2021 All Rights Reserved. edgar-cuppari.dev 
       <br>
-      <br>
-      <br>
-      <center>⫹ 2021 All Rights Reserved. edgar-cuppari.dev <br>
-      <a href="https://edgar-cuppari-dev.vercel.app/"><i class="fas fa-undo"> Zurück </i></a></center>   
+      <a href="https://edgar-cuppari-dev.vercel.app/"><i class="fas fa-undo">
+        Zurück </i></a>
+    </center>
     <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.2.1.js"></script>
     <!--Hier ist der link zum script file / confetti.js -->
     <script src="confetti.js"></script>
@@ -62,11 +109,12 @@
           setTimeout(function () {
             confetti.stop();
           }, 5000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
-        }; 
+        };
         // mit der Funktion start()/stop(), können wir die Funktion abrufen.
         start();
         stop(); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
       </script>
     </center>
-  </body>
+</body>
+
 </html>
