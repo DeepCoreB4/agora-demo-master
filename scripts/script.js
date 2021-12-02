@@ -1,11 +1,11 @@
-<!--hide
+
 const options = {
   appId: "936df68e27bc460b85977a90f7e3c5df",
   channel: "VCall",
   token:
     "006936df68e27bc460b85977a90f7e3c5dfIABNJhIYmLtwdDjgbHeHE1qmCPQUy2QSyVzFAtwL8MZFo2qSiTwAAAAAEAAAO0SY096oYQEAAQDW3qhh",
 };
-//-->
+
 
 let rtc = {
   client: null,
@@ -34,9 +34,9 @@ async function startBasicCall() {
   join().then(() => {
     startVideo();
     startAudio();
-
+// test 2 / as 1/ 
     rtc.client.on("user-published", async (user, mediaType) => {
-      if (rtc.client._users.length > 1) {
+      if (rtc.client._users.length >4) {
         roomFull();
       }
 
