@@ -13,7 +13,7 @@
     <link href="./styles/styles.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="container">
+    <section class="container">
       <center>
         <header>
           <i class="fas fa-camera"></i> V-Call App - Nice to See you
@@ -38,7 +38,12 @@
         <button class="holder--options-option" id="btnStart">
           <i class="fas fa-plug"></i> Beitreten
         </button>
-      </div>
+      </section>
+      <br>
+      <a href="https://edgar-cuppari-dev.vercel.app/"> <i class="fas fa-undo"> Zurück</i></a>
+      <br>
+      <br>
+      <center>⫹ 2021 All Rights Reserved. edgar-cuppari.dev</center>   
     <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.2.1.js"></script>
     <!--Hier ist der link zum script file / confetti.js -->
     <script src="confetti.js"></script>
@@ -47,15 +52,12 @@
     <center>
       <script>
         // confetti scrip starten...
-  
         const start = () => {
           setTimeout(function () {
             confetti.start();
           }, 1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
         };
-  
-        //  zum stoppen der confetti Animation
-  
+        //  zum stoppen der confetti Animation 
         const stop = () => {
           setTimeout(function () {
             confetti.stop();
