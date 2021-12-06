@@ -1,52 +1,50 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description" content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name='twitter:site' content='@v-call'>
-    <meta name='twitter:creator' content='@blendit4ent'>
-    <meta name='twitter:title' content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
-    <meta name='twitter:domain' content='https://v-call.vercel.app/'>
-    <meta name='twitter:description' content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name='twitter:image' content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
-    <script src="./scripts/newscat.js"></script>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./styles/favicon.ico">
-    <link href="./styles/styles.css" rel="stylesheet" />
-    <!-- zusaätzliche css für newsBanner-->
-    <link rel="stylesheet" type="text/css" href="./styles/banner.css" />
-    <!--Hier ist der link zum script file / VideoCall CameraIcon -->
-    <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+  <meta name="description" content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name='twitter:site' content='@v-call'>
+  <meta name='twitter:creator' content='@blendit4ent'>
+  <meta name='twitter:title' content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
+  <meta name='twitter:domain' content='https://v-call.vercel.app/'>
+  <meta name='twitter:description' content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+  <meta name='twitter:image' content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="./styles/favicon.ico">
+  <link href="./styles/styles.css" rel="stylesheet" />
+  <!-- zusaätzliche css für newsBanner-->
+  <link rel="stylesheet" type="text/css" href="./styles/banner.css" />
+  <!--Hier ist der link zum script file / VideoCall CameraIcon -->
+  <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
   <!--Passwort Protection / Snippet start/.. this is right written/ just ignore this "<!--" crap of shit-->
   <script language="JavaScript">
-  <!--hide 
+    <!--hide 
     
-  var password;
-  var pass1="e8996@9803a";
+    var password;
+    var pass1="e8996@9803a";
 
-  password=prompt('Du brachst ein Passwort um die V-CALL APP benutzen zu können!', ' ');
+    password=prompt('Du brachst ein Passwort um die V-CALL APP benutzen zu können!', ' ');
 
-  function showPwd(id, el) {
-    let x = document.getElementById(id);
-      if (x.type === "password") {
-        x.type = "text";
-        el.className = 'fa fa-eye-slash showpwd';
-      } else {
-        x.type = "password";
-        el.className = 'fa fa-eye showpwd';
-      }
-  }
-  if (password==pass1)
-    alert('Yow Bre, Click OK to enter V-Call APP!!');
-  else {
-    window.location="https://v-call.vercel.app/";
-    alert('Hei Bro, falsches Password!!');
-  }
-//-->
+    function showPwd(id, el) {
+      let x = document.getElementById(id);
+        if (x.type === "password") {
+          x.type = "text";
+          el.className = 'fa fa-eye-slash showpwd';
+        } else {
+          x.type = "password";
+          el.className = 'fa fa-eye showpwd';
+        }
+    }
+    if (password==pass1)
+      alert('Yow Bre, Click OK to enter V-Call APP!!');
+    else {
+      window.location="https://v-call.vercel.app/";
+      alert('Hei Bro, falsches Password!!');
+    }
+    //-->
   </script>
   <!--Passwort Protection Snippet ENDE -->
     <style>
@@ -71,8 +69,8 @@
   </head>
 <body>
 <!--NewsBanner/ Add some news here -->
- <div id="banner-content">
-     <div id="banner">
+<div id="banner-content">
+    <div id="banner">
       <div class="ticker">
         <div class="title">
           <h5>Breaking News</h5>
@@ -165,6 +163,6 @@
         start();
         stop(); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
       </script>
-  </center>
+    </center>
 </body>
 </html>

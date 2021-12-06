@@ -1,7 +1,8 @@
 const options = {
-  appId: "936df68e27bc460b85977a90f7e3c5df",
-  channel: "VCall",
-  token: "006936df68e27bc460b85977a90f7e3c5dfIABNJhIYmLtwdDjgbHeHE1qmCPQUy2QSyVzFAtwL8MZFo2qSiTwAAAAAEAAAO0SY096oYQEAAQDW3qhh",
+  appId: "db9d640e75354588af20871d2981fef0",
+  certificate:"cc2d6bebdeda43a89731fb12742b411d",
+  channel: "V-Call",
+  token: "006db9d640e75354588af20871d2981fef0IABpgvEQr8ZzmGNSvQ793lVY1/2zIZSHFfP31tY1KaS8N+D+vB8AAAAAEADSaEtp2gKvYQEAAQDaAq9h",
 };
 
 
