@@ -17,6 +17,7 @@ body {
   width: 100%;
   background: #1a202c;
 }
+
 input[type='password'] {  
   width: 100%;  
   box-sizing: border-box;  
@@ -28,10 +29,11 @@ input[type='password'] {
   margin: 10px 0;  
   transition: .2s;  
 }  
+
 input[type='password']:focus {  
   outline: none;  
-   -moz-outline: none;  
-   -webkit-outline: none;  
+  -moz-outline: none;  
+  -webkit-outline: none;  
 }
 
 .container {
@@ -39,7 +41,8 @@ input[type='password']:focus {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 980px;
+  max-width: 990px;
+  min-width: 480px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -81,8 +84,8 @@ input[type='password']:focus {
 
 .holder--video-me {
   position: absolute;
-  right: 0.5rem;
-  top: 0.5rem;
+  right: 1.5rem;
+  top: 3.5rem;
   width: 125px;
   height: 125px;
   overflow: hidden;
