@@ -6,12 +6,6 @@ var localTracks = {
 };
 var remoteUsers = {};
 // Agora client options
-var options = { 
-  appid: null,
-  channel: null,
-  uid: null,
-  token: null
-};
 
 // the demo can auto join channel with params in url
 $(() => {
