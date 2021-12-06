@@ -82,12 +82,13 @@ input[type='password']:focus {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   overflow: hidden;
   border: 3px solid rgba(250, 215, 170, 0.692);
   border-radius: 15px;
   background: #1a202c;
+  background-image: url(/assets/Gorillo.gif);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
