@@ -39,7 +39,7 @@ input[type='password']:focus {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  max-width: 800px;
+  max-width: 980px;
   margin: 0 auto;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -64,9 +64,10 @@ input[type='password']:focus {
 
 .holder {
   border-radius: 15px;
-  background: #0c1214;;
+  background: #0c1214;
+  background-image: url(/assets/behGlaslarge.gif);
   width: 100%;
-  min-height: 50px;
+  min-height: 30px;
   border: 0px solid #333;
 }
 
@@ -82,8 +83,8 @@ input[type='password']:focus {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  width: 130px;
-  height: 130px;
+  width: 125px;
+  height: 125px;
   overflow: hidden;
   border: 3px solid rgba(250, 215, 170, 0.692);
   border-radius: 15px;
@@ -146,6 +147,7 @@ input[type='password']:focus {
       -ms-flex-align: center;
           align-items: center;
   padding: 1rem 0;
+  background-image: url(/assets/banner.gif);
 }
 
 .holder--options-option {
@@ -159,7 +161,7 @@ input[type='password']:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: none;
+  background: none;
   outline: none;
   border: 0px;
   background: none;
@@ -167,7 +169,7 @@ input[type='password']:focus {
 }
 
 .holder--options-option i {
-  background: #1a202c;
+  background: #1a202cc7;
   border-radius: 50%;
   margin-bottom: 0.5rem;
   font-size: 1.5rem;

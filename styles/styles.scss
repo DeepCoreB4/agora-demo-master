@@ -17,7 +17,7 @@ body {
 .container {
   display: flex;
   width: 100%;
-  max-width: 800px;
+  max-width: 980px;
   margin: 0 auto;
   flex-direction: column;
   padding: 1rem;
@@ -36,8 +36,9 @@ body {
 .holder {
   border-radius: 15px;
   background: #0c1214;
+  background-image: url(/assets/behGlaslarge.gif);
   width: 100%;
-  min-height: 50px;
+  min-height: 30px;
   border: 1px solid #333;
 
   &--video {
@@ -55,11 +56,12 @@ body {
       overflow: hidden;
       border: 3px solid #fff;
       border-radius: 15px;
-      background: #efefef;
+      background: #1a202c;
+      background-image: url(/assets/Gorillo.gif);
       display: flex;
       justify-content: center;
       align-items: center;
-      font-style: italic;
+      font-style: regular;
       &.connecting {
         &:before {
           content: "Connecting...";
@@ -90,6 +92,7 @@ body {
     justify-content: space-around;
     align-items: center;
     padding: 1rem 0;
+    background-image: url(/assets/banner.gif);
     &-option {
       display: flex;
       flex-direction: column;
@@ -100,7 +103,7 @@ body {
       background: none;
       color: #fff;
       i {
-        background: #1a202c;
+        background: #1a202cc7;
         border-radius: 50%;
         margin-bottom: 0.5rem;
         font-size: 1.5rem;

@@ -26,7 +26,7 @@
     var password;
     var pass1="e8996@9803a";
 
-    password=prompt('Du brachst ein Passwort um die V-CALL APP benutzen zu können!', ' ');
+    password=prompt('Du brachst ein Passwort um die V-CALL APP benutzen zu können!','');
 
     function showPwd(id, el) {
       let x = document.getElementById(id);
@@ -42,30 +42,11 @@
       alert('Yow Bre, Click OK to enter V-Call APP!!');
     else {
       window.location="https://v-call.vercel.app/";
-      alert('Hei Bro, falsches Password!!');
+      alert('Hei Bro, falsches Password!! Try again..');
     }
     //-->
   </script>
   <!--Passwort Protection Snippet ENDE -->
-    <style>
-    input[type='password'] {
-      width: 100%;
-      box-sizing: border-box;
-      height: 55px;
-      display: inline-block;
-      border-radius: 5px;
-      padding: 15px;
-      margin: 10px 0;
-      transition: .2s;
-      align-content: center;
-    }
-
-    input[type='password']:focus {
-      outline: none;
-      -moz-outline: none;
-      -webkit-outline: none;
-    }
-    </style>
   </head>
 <body>
 <!--NewsBanner/ Add some news here -->
