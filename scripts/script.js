@@ -20,7 +20,7 @@ const me = document.getElementById("me");
 const remote = document.getElementById("remote");
 
 const join = async () => {
-  rtc.client = AgoraRTC.createClient({ mode: "live", codec: "vp8" });
+  rtc.client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
   return await rtc.client.join(
     options.appId,
     options.channel,
