@@ -33,7 +33,7 @@ a {
     margin: 10 px;
     text-align: center;
     background: #c81c1c;
-    position: relative;
+    position: sticky;
   }
   .title:after {
     position: absolute;
