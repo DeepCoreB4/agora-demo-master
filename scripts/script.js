@@ -34,7 +34,7 @@ async function startBasicCall() {
   join().then(() => {
     startVideo();
     startAudio();
-    // 4 personen erlaub im Chat...
+    // 1 personen erlaub im Chat...
     rtc.client.on("user-published", async (user, mediaType) => {
       if (rtc.client._users.length >1) {
         roomFull();
