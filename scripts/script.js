@@ -56,7 +56,7 @@ async function startBasicCall() {
   });
   btnStop.classList.remove("hidden");
   btnStart.classList.add("hidden");
-}
+};
 
 btnStop.addEventListener("click", () => {
   leave();
