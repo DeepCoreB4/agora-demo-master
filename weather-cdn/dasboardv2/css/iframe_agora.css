@@ -16,7 +16,7 @@ body {
 
 .container {
     display: flex;
-    width: auto;
+
     /* max-width: 1080px; */
     min-width: 480px;
     margin: 0 auto;
