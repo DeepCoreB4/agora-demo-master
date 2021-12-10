@@ -82,7 +82,7 @@
     <br>
     <br>
     <!--Hier ist der link zum script file / confetti.js -->
-    <script src="/confetti.js"></script>
+    <script src="/scripts/confetti.js"></script>
     <!--Agora-VideoCall Script -->
     <script src="/scripts/script.js"></script>
     <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.7.3.js"></script>
@@ -98,7 +98,7 @@
         const stop = () => {
           setTimeout(function () {
             confetti.stop();
-          }, 5000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
+          }, 10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
         };
         // mit der Funktion start()/stop(), können wir die Funktion abrufen.
         start();
