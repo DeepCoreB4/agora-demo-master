@@ -7,19 +7,35 @@
     padding: 0;
 }
 
+html,
+
 body{
     background:url('/assets/moshed-2021-11-10-0-40-55.gif');
     background-repeat: no-repeat;
     background-size:cover;
     overflow:hidden;
-    height: 100vh;
+    height: 100%;
     font-family: PomfretV2;
     font-weight: normal;
     font-style: normal;
 }
 
+#iframe
+.top-bar {
+    width: 80%;
+    padding: 3vh ;
+    padding-top: -1vh;
+}
+.holder{
+    background: #0c1214;
+    background-repeat: no-repeat;
+    background-size:poster ;
+    background-image: url(/assets/behGlaslarge.gif);
+    border: 0px solid #333;
+}
+
 .container{
-    padding: 20px 70px;
+    padding: 100px 70px;
     color:#fff;
 }
 
@@ -77,12 +93,12 @@ body{
 .future-forecast{
     background: rgba(24,24,27,0.8);
     padding: 25px;
-    position: fixed;
-    bottom: 0;
+    position: sticky;
+    bottom: auto;
     display: flex;
     color:white;
-    width: 100%;
-    align-items: center;
+    width: auto;
+    align-items: initial;
     justify-content: center;
     overflow-y: hidden;
 }
