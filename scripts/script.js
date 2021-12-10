@@ -1,9 +1,9 @@
 <!--hide
 const options = {
-  appId: "db9d640e75354588af20871d2981fef0",
-  certificate:"be21633550454e8f9eb8b4a51ad888c3",
+  appId: "1a99abaee80c4c468496d0302e3ecdb2",
+  certificate:"010f2fd44ee244998fd9854b82063389",
   channel: "vcall",
-  token: "006db9d640e75354588af20871d2981fef0IAAURGcFqM8Vq+6uEYE9/MwwfIvey8ao9oUnL+juIqKWNlASel0AAAAAEAB7rfAffMO0YQEAAQB7w7Rh",
+  token: "0061a99abaee80c4c468496d0302e3ecdb2IAAxwekX4nz3OOxChnI9b93PbtSKQcMJoT1WREM8wD52NG/m3BIAAAAAEAB7rfAfDSe1YQEAAQALJ7Vh",
 };
 //-->
 let rtc = {
