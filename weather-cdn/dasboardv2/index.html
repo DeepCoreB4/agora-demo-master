@@ -8,14 +8,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description" content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name="description"
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
     <meta name="twitter:card" content="summary_large_image">
     <meta name='twitter:site' content='@v-call'>
     <meta name='twitter:creator' content='@blendit4ent'>
-    <meta name='twitter:title' content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
+    <meta name='twitter:title'
+        content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
     <meta name='twitter:domain' content='https://v-call.vercel.app/'>
-    <meta name='twitter:description' content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name='twitter:image' content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+    <meta name='twitter:description'
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name='twitter:image'
+        content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <title>Deepcore Weather App - with Vido Call</title>
@@ -33,6 +37,7 @@
         font-display: swap;
     }
 </style>
+
 <body>
     <div class="container">
         <div class="current-info">
@@ -47,101 +52,104 @@
             <div class="place-container">
                 <div class="time-zone" id="time-zone">
                     Schweiz/...
-                <div id="country" class="country">CH</div>
+                    <div id="country" class="country">CH</div>
+                </div>
             </div>
         </div>
-    </div>
-    <section class="holder holder--video">
-        <center>
-        <iframe name="iframe1" id="iframe1"
-            src="https://console.agora.io/invite?sign=ab8a2a2042488b9ee1c050383af7037c%253Ac82d5ac491624293931f88c0a17de11891bed59693d9afb9bea057a45d759f39&step=0"
-            scrolling="no" seamless="seamless" ;
-            style="border-style: none; width: 100%; height: 560px; overflow: hidden">
-            <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
-                Sie können die eingebettete Seite über den folgenden Verweis aufrufen:
-                <a href="https://v-call.vercel.app/index.html">SELFHTML</a>
-            </p>
-            <script language="JavaScript">
-                var cssLink = document.createElement("link");
-                cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.scss";
-                cssLink.rel = "stylesheet";
-                cssLink.type = "text/css";
-                frames['iframe1'].document.head.appendChild(cssLink);
-            </script>
-        </iframe>
-    </center>
-    <br>
-    <br>
-    <br>
-    <br>
-    </section>
-    <div class="future-forecast">
-        <div class="today" id="current-temp">
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-            <div class="other">
-                <div class="day">Monday</div>
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
+        <section class="holder holder--video">
+            <center>
+                <iframe name="iframe1" id="iframe1"
+                    src="https://console.agora.io/invite?sign=ab8a2a2042488b9ee1c050383af7037c%253Ac82d5ac491624293931f88c0a17de11891bed59693d9afb9bea057a45d759f39&step=0"
+                    scrolling="no" seamless="seamless" ;
+                    style="border-style: none; width: 100%; height: 560px; overflow: hidden">
+                    <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
+                        Sie können die eingebettete Seite über den folgenden Verweis aufrufen:
+                        <a href="https://v-call.vercel.app/index.html">SELFHTML</a>
+                    </p>
+                    <script language="JavaScript">
+                        var cssLink = document.createElement("link");
+                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.scss";
+                        cssLink.rel = "stylesheet";
+                        cssLink.type = "text/css";
+                        frames['iframe1'].document.head.appendChild(cssLink);
+                    </script>
+                </iframe>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+        <div class="future-forecast">
+            <div class="today" id="current-temp">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="other">
+                    <div class="day">Monday</div>
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Tue</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Wed</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Thur</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Fri</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sat</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
             </div>
         </div>
-        <div class="weather-forecast" id="weather-forecast">
-            <div class="weather-forecast-item">
-                <div class="day">Tue</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Wed</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Thur</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Fri</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-            <div class="weather-forecast-item">
-                <div class="day">Sat</div>
-                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
-                <div class="temp">Night - 25.6&#176; C</div>
-                <div class="temp">Day - 35.6&#176; C</div>
-            </div>
-        </div>
-    </div>
-    <script src="/scripts/script.js"></script>
-    <script src="/scripts/confetti.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    </script>
-    <center>
-        <script>
-            // confetti scrip starten...
-            const start = () => {
-                setTimeout(function () {
-                    confetti.start();
-                }, 1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
-            };
-            //  zum stoppen der confetti Animation 
-            const stop = () => {
-                setTimeout(function () {
-                    confetti.stop();
-                }, 10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
-            };
-            // mit der Funktion start()/stop(), können wir die Funktion abrufen.
-            start();
-            stop(); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
+        <script src="/scripts/script.js"></script>
+        <script src="/scripts/confetti.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
-    </center>
+        <center>
+            <script>
+                // confetti scrip starten...
+                const start = () => {
+                    setTimeout(function () {
+                        confetti.start();
+                    },
+                    1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
+                };
+                //  zum stoppen der confetti Animation 
+                const stop = () => {
+                    setTimeout(function () {
+                        confetti.stop();
+                    },
+                    10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
+                };
+                // mit der Funktion start()/stop(), können wir die Funktion abrufen.
+                start();
+                stop
+                (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
+            </script>
+        </center>
 </body>
 
 </html>
