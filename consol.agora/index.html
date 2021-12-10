@@ -1,117 +1,152 @@
-<!doctype html>
-<html>
-  <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name='twitter:site' content='@v-call'>
-  <meta name='twitter:creator' content='@blendit4ent'>
-  <meta name='twitter:title' content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
-  <meta name='twitter:domain' content='https://v-call.vercel.app/'>
-  <meta name='twitter:description' content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-  <meta name='twitter:image' content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="shortcut icon" href="/assets/favicon.ico">
-  <link href="/styles/styles.css" rel="stylesheet" />
-  <link type="text/css" rel="Stylesheet" href="/styles/iframe_agora.css" />
-  <!-- zusaätzliche css für newsBanner-->
-  <link rel="stylesheet" type="text/css" href="/styles/banner.css" />
-  <!--Hier ist der link zum script file / VideoCall CameraIcon -->
-  <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
-<div id="banner-content">
-    <div id="banner">
-      <div class="ticker">
-        <div class="title">
-          <h5>Breaking News</h5>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="description"content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name='twitter:site' content='@v-call'>
+    <meta name='twitter:creator' content='@blendit4ent'>
+    <meta name='twitter:title'content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
+    <meta name='twitter:domain' content='https://v-call.vercel.app/weather-cdn/dasboardv2/'>
+    <meta name='twitter:description'content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name='twitter:image'content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <title>Deepcore Weather App - with Vido Call</title>
+    <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/weather.css">
+    <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/iframe_agora.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'PomfretV2';
+        src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
+        font-style: itlaic;
+        font-weight: normal;
+        font-display: swap;
+    };
+    element.style {
+    border-style: none;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
+</style>
+
+<body>
+    <div class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    13:35 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Donerstag, 09 Dez
+                </div>
+            </div>
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Schweiz/...</div>
+                <div id="country" class="country">CH</div>
+            </div>
+            <div class="others" id="current-weather-items">
+            </div>
         </div>
-        <div class="news">
-          <marquee>
-            <a><a href="https://t.me/MARKmobil/2677">
-              Let's go Washington...
-              Die Mitarbeiter von KAMALA HARRIS verlassen schrittweise das Weiße Haus. Fox berichtet, sie hätten Sorge, für immer als "Harris-Mitarbeiter" gebrandmarkt zu werden. 
-              Der Name Harris schadet inzwischen der Karriere. JOE BIDEN sucht bereits nach einem Ersatz für sie, ist aber seinerseits selbst angeschlagen. 
-              Die Zustimmungswerte im Volk liegen auf einem Rekordtief.
-            </a></a>
-            <a><a href="https://t.me/LIONMediaTV/247">
-            🎥 Corona-Dystopie: Australien steckt Ureinwohner in Lager
-            📰 Seit dem Beginn der Pandemie wird in Australien ausprobiert, wie weit man es mit den Maßnahmen treiben kann. 
-            Nun setzen sie das Militär ein, um vermeintlich infizierte Ureinwohner in Lager zu bringen und ihre Stämme durchzuimpfen. Sie senden einen Hilferuf an die Welt...           
-            🦁 Unterstützung von LION Media
-            </a></a>
-            <a><a href="https://t.me/QlobalChange/22258">
-              Der Maxwell-Prozess: Epsteins Pilot packt aus!!!
-              Der Prozess gegen Epsteins Gehilfin Ghislaine Maxwell hat begonnen. Neben den Opfern des pädophilen Netzwerkes sagt auch der Pilot des „Lolita Express“ vor Gericht aus und schreckt nicht davor zurück, 
-              Namen zu nennen.
-            </a></a>
-            <a><a href="https://t.me/TranslatedPressDE">
-              Schweizer Forscher: Impfstoff funktioniert nicht!
-              Bei der ALETHEIA Medien Konferenz in der Schweiz gaben Forscher ihre neuesten Erkenntise über die Wirkung der Corona Impfstoffe bekannt. Das Resultat ist erschütternd
-            </a></a>
-          </marquee>
+        <center>
+            <section class="holder holder--video">
+                <iframe
+                    src="https://console.agora.io/invite?sign=59f02ef5e2238acf112c896f63a5b709%253Afdcff39ddfe49662e685d7621f5ebb81a2a28eca8b1d8296791e308ace1fdf4a&step=1"
+                    scrolling="no" seamless="seamless" ;
+                    style="border-style: none; width: 100%; height: 560px; overflow: hidden">
+                    <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
+                        Sie können die eingebettete Seite über den folgenden Verweis aufrufen:
+                        <a href="https://v-call.vercel.app/index.html">SELFHTML</a>
+                    </p>
+                    <script language="JavaScript">
+                        var cssLink = document.createElement("link");
+                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.css";
+                        cssLink.rel = "stylesheet";
+                        cssLink.type = "text/css";
+                        frames['iframe1'].document.head.appendChild(cssLink);
+                    </script>
+                </iframe>
+
+            </section>
+        </center>
+        <br>
+        <br>
+        <div class="future-forecast">
+            <div class="today" id="current-temp">
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="other">
+                    <div class="day">Monday</div>
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+            </div>
+
+            <div class="weather-forecast" id="weather-forecast">
+                <div class="weather-forecast-item">
+                    <div class="day">Tue</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Wed</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Thur</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Fri</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+                <div class="weather-forecast-item">
+                    <div class="day">Sat</div>
+                    <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                    <div class="temp">Night - 25.6&#176; C</div>
+                    <div class="temp">Day - 35.6&#176; C</div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </div>
-  <!--NewsBanner/ news ENDS here -->
-  <section class="container"> 
-    <br>
-    <center>
-      <header>
-        <i class="fas fa-camera"></i> V-Call App - Nice to See you
-      </header>
-    </center>
-    <section class="holder holder--video">
-      <center>
-      <iframe src="https://console.agora.io/invite?sign=59f02ef5e2238acf112c896f63a5b709%253Afdcff39ddfe49662e685d7621f5ebb81a2a28eca8b1d8296791e308ace1fdf4a&step=1" 
-        scrolling="no" seamless="seamless"; style="border-style: none; width: 100%; height: 560px; overflow: hidden">
-            <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
-            Sie können die eingebettete Seite über den folgenden Verweis aufrufen: 
-          <a href="https://v-call.vercel.app/weather-cdn/dasboardv2/">SELFHTML</a>
-          </p>
-          <script language="JavaScript">
-            var cssLink = document.createElement("link");
-            cssLink.href = "/styles/ifram_agora.css"; 
-            cssLink.rel = "stylesheet"; 
-            cssLink.type = "text/css"; 
-            frames['iframe1'].document.head.appendChild(cssLink);
-          </script>
-      </iframe>
-    </center>
-    </section>      
-    <center>
-        <a href="https://edgar-cuppari-dev.vercel.app/"><i class="fas fa-undo">
-          Zurück </i></a>
-      </center>
-    <br>
-    <br>
-    <br>
-    <center>⫹ 2022 All Rights Reserved. edgar-cuppari.dev
-      <br>
-      <br>
-      <center>
-    <!--Hier ist der link zum script file / confetti.js -->
-    <script src="/scripts/confetti.js"></script>
-    <!--Agora-VideoCall Script -->
-    <center>
-      <script>
-        // confetti scrip starten...
-        const start = () => {
-          setTimeout(function () {
-            confetti.start();
-          }, 1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
-        };
-        //  zum stoppen der confetti Animation 
-        const stop = () => {
-          setTimeout(function () {
-            confetti.stop();
-          }, 10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
-        };
-        // mit der Funktion start()/stop(), können wir die Funktion abrufen.
-        start();
-        stop(); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
-      </script>
-    </center>
+        <script src="/weather-cdn/dasboardv2/js/weather.js"></script>
+        <script src="/scripts/confetti.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <center>
+            <script>
+                // confetti scrip starten...
+                const start = () => {
+                    setTimeout(function () {
+                        confetti.start();
+                    },
+                        1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
+                };
+                //  zum stoppen der confetti Animation 
+                const stop = () => {
+                    setTimeout(function () {
+                        confetti.stop();
+                    },
+                        10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
+                };
+                // mit der Funktion start()/stop(), können wir die Funktion abrufen.
+                start();
+                stop
+                    (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
+            </script>
+        </center>
 </body>
+
 </html>
