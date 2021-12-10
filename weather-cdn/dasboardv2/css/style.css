@@ -1,22 +1,16 @@
 *{
     box-sizing: border-box;
     margin:0;
-    padding: 0;
+    padding:0;
 }
-@font-face { font-family: 'PomfretV2'; src: url('/styles/customFont/Pomfret-Regular.woff2'); font-style: regular; font-weight: normal; font-display: swap;
-}
-
-html,
 
 body{
-    background:url('/assets/moshed-2021-11-10-0-40-55.gif');
+    background:url('https://images.unsplash.com/photo-1621274403997-37aace184f49?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1');
     background-repeat: no-repeat;
     background-size:cover;
     overflow:hidden;
     height: 100vh;
-    font-family: PomfretV2;
-    font-weight: normal;
-    font-style: normal;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container{
@@ -74,21 +68,22 @@ body{
     justify-content: space-between;
 }
 
+
 .future-forecast{
     background: rgba(24,24,27,0.8);
     padding: 25px;
-    position: flex;
+    position: fixed;
     bottom: 0;
     display: flex;
     color:white;
-    width: auto;;
+    width: 100%;
     align-items: center;
     justify-content: center;
-    overflow-y: inherit;
+    overflow-y: hidden;
 }
 
 .future-forecast .today{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     border: 1px solid #eee;
@@ -139,21 +134,8 @@ body{
     font-size: 12px;
 }
 
-#iframe.top-bar {
-    width: 100%;
-    padding: 3vh ;
-    padding-top: 4vh;
-}
 
-.holder{
-    background: #0c1214;
-    background-repeat: no-repeat;
-    background-size: poster;
-    background-image: url(/assets/behGlaslarge.gif);
-    border: 0px solid #333;
-}
-
-@media only screen and  (max-width:1400px){
+@media only screen and  (max-width:730px){
     
     .container{
         padding: 20px;
@@ -162,7 +144,7 @@ body{
     .future-forecast{
         justify-content: start;
         align-items: none;
-        overflow-y: hidden;
+        overflow-y: scroll;
     }
 
     .future-forecast .today .temp{
@@ -200,7 +182,7 @@ body{
 
 }
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 1400px){
     .future-forecast{
         justify-content: start;
         align-items: none;

@@ -1,31 +1,23 @@
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-    <meta name="description"
-        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name="description"content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
     <meta name="twitter:card" content="summary_large_image">
     <meta name='twitter:site' content='@v-call'>
     <meta name='twitter:creator' content='@blendit4ent'>
-    <meta name='twitter:title'
-        content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
-    <meta name='twitter:domain' content='https://v-call.vercel.app/'>
-    <meta name='twitter:description'
-        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name='twitter:image'
-        content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+    <meta name='twitter:title'content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
+    <meta name='twitter:domain' content='https://v-call.vercel.app/weather-cdn/dasboardv2/'>
+    <meta name='twitter:description'content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name='twitter:image'content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <title>Deepcore Weather App - with Vido Call</title>
     <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/weather.css">
-    <link rel="stylesheet" href="/weather-cdn/dasboardv2/js/weather.js">
     <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/iframe_agora.css">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 </head>
@@ -33,40 +25,44 @@
     @font-face {
         font-family: 'PomfretV2';
         src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
-        font-style: normal;
+        font-style: itlaic;
         font-weight: normal;
         font-display: swap;
-    }
+    };
     element.style {
-    border-style: none;
-    width: 100%;
-    height: 830
-px
-;
-    overflow: hidden;
-}
+        border-style: none;
+        width: 100%;
+        height: 830 px;
+        overflow: hidden;
+    }
 </style>
 
 <body>
+
     <div class="container">
         <div class="current-info">
+
             <div class="date-container">
                 <div class="time" id="time">
-                    23:59 <span id="am-pm">PM</span>
+                    13:35 <span id="am-pm">PM</span>
                 </div>
                 <div class="date" id="date">
                     Donerstag, 09 Dez
                 </div>
-            </div>
-            <div class="place-container">
-                <div class="time-zone" id="time-zone">
-                    Schweiz/...
-                    <div id="country" class="country">CH</div>
+
+                <div class="others" id="current-weather-items">
+
+
                 </div>
             </div>
+
+            <div class="place-container">
+                <div class="time-zone" id="time-zone">Schweiz/...</div>
+                <div id="country" class="country">CH</div>
+            </div>
         </div>
-        <section class="holder holder--video">
-            <center>
+        <center>
+            <section class="holder holder--video">
                 <iframe name="iframe1" id="iframe1"
                     src="https://console.agora.io/invite?sign=ab8a2a2042488b9ee1c050383af7037c%253Ac82d5ac491624293931f88c0a17de11891bed59693d9afb9bea057a45d759f39&step=0"
                     scrolling="no" seamless="seamless" ;
@@ -77,18 +73,17 @@ px
                     </p>
                     <script language="JavaScript">
                         var cssLink = document.createElement("link");
-                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.scss";
+                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.css";
                         cssLink.rel = "stylesheet";
                         cssLink.type = "text/css";
                         frames['iframe1'].document.head.appendChild(cssLink);
                     </script>
                 </iframe>
-            </center>
-            <br>
-            <br>
-            <br>
-            <br>
-        </section>
+
+            </section>
+        </center>
+        <br>
+        <br>
         <div class="future-forecast">
             <div class="today" id="current-temp">
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
@@ -98,6 +93,7 @@ px
                     <div class="temp">Day - 35.6&#176; C</div>
                 </div>
             </div>
+
             <div class="weather-forecast" id="weather-forecast">
                 <div class="weather-forecast-item">
                     <div class="day">Tue</div>
@@ -131,12 +127,11 @@ px
                 </div>
             </div>
         </div>
-        <script src="/scripts/script.js"></script>
+        <script src="/weather-cdn/dasboardv2/js/weather.js"></script>
         <script src="/scripts/confetti.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
             integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer">
-        </script>
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <center>
             <script>
                 // confetti scrip starten...
@@ -144,21 +139,21 @@ px
                     setTimeout(function () {
                         confetti.start();
                     },
-                    1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
+                        1000); //1000 ist die Zeit, in der nach 1 Sekunde das Konfetti gestartet wird (1000 = 1 Sekunde)
                 };
                 //  zum stoppen der confetti Animation 
                 const stop = () => {
                     setTimeout(function () {
                         confetti.stop();
                     },
-                    10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
+                        10000); // 5000 ist die Valu in Sekunden,  nach 5 Sekunden, stoppt die Konfetti Animation( 5000 = 5 sec)
                 };
                 // mit der Funktion start()/stop(), können wir die Funktion abrufen.
                 start();
                 stop
-                (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
+                    (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
             </script>
         </center>
-    </body>
+</body>
 
 </html>
