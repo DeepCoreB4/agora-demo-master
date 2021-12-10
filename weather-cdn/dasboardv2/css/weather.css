@@ -29,6 +29,7 @@ body{
     justify-content: space-evenly;
     flex-wrap: wrap;
     align-items: center;
+    background: #232527c2;
 }
 .date-container{
     font-weight: 100;
@@ -51,23 +52,27 @@ body{
 }
 
 .place-container .time-zone{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 100;
 }
 
 .place-container .country{
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 300;
 }
 
 .current-info .others{
-    display: flex;
+    display: contents;
     flex-direction: column;
-    background: rgba(24,24,27, 0.6);
+    background-blend-mode: color-dodge;
     padding:20px;
     border-radius: 10px;
     margin: 10px 0;
     border: 1px solid #eee;
+    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .current-info .others .weather-item{
