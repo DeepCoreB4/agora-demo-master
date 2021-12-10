@@ -2,8 +2,9 @@
 const options = {
   appId: "1a99abaee80c4c468496d0302e3ecdb2",
   certificate:"010f2fd44ee244998fd9854b82063389",
-  channel: "vcall",
+  channel: "weChat",
   token: "0061a99abaee80c4c468496d0302e3ecdb2IAAxwekX4nz3OOxChnI9b93PbtSKQcMJoT1WREM8wD52NG/m3BIAAAAAEAB7rfAfDSe1YQEAAQALJ7Vh",
+  AppIdentifier: "CN3FgFK2Eeywi4c7t7IxHQ/vdazrgOo95MIhg",
 };
 //-->
 let rtc = {
