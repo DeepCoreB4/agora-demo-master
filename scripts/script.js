@@ -6,7 +6,6 @@ const options = {
   token: "006db9d640e75354588af20871d2981fef0IAAURGcFqM8Vq+6uEYE9/MwwfIvey8ao9oUnL+juIqKWNlASel0AAAAAEAB7rfAffMO0YQEAAQB7w7Rh",
 };
 //-->
-
 let rtc = {
   client: null,
   localAudioTrack: null,
@@ -34,9 +33,9 @@ async function startBasicCall() {
   join().then(() => {
     startVideo();
     startAudio();
-    // 1 personen erlaub im Chat...
+
     rtc.client.on("user-published", async (user, mediaType) => {
-      if (rtc.client._users.length >1) {
+      if (rtc.client._users.length > 1) {
         roomFull();
       }
 
@@ -56,7 +55,7 @@ async function startBasicCall() {
   });
   btnStop.classList.remove("hidden");
   btnStart.classList.add("hidden");
-};
+}
 
 btnStop.addEventListener("click", () => {
   leave();
@@ -85,6 +84,7 @@ const leave = () => {
 };
 
 const stopAudio = () => {
+  rtc.localAudioTrack.close();
   rtc.client.unpublish(rtc.localAudioTrack);
   btnMic.classList.remove("active");
 };
