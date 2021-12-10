@@ -1,9 +1,9 @@
 <!--hide
 const options = {
-  appId: "be21633550454e8f9eb8b4a51ad888c3",
+  appId: "db9d640e75354588af20871d2981fef0",
   certificate:"be21633550454e8f9eb8b4a51ad888c3",
   channel: "vcall",
-  token: "006db9d640e75354588af20871d2981fef0IACdFGt68rVeNJ1HXmGh2nWN3igp83qeJnV/9CdFpbll7FASel0AAAAAEAA+DPg7OGavYQEAAQA3Zq9h",
+  token: "006db9d640e75354588af20871d2981fef0IAAURGcFqM8Vq+6uEYE9/MwwfIvey8ao9oUnL+juIqKWNlASel0AAAAAEAB7rfAffMO0YQEAAQB7w7Rh",
 };
 //-->
 
