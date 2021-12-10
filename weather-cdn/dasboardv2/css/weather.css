@@ -26,8 +26,9 @@ body{
 
 .current-info{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+    align-items: center;
 }
 .date-container{
     font-weight: 100;
