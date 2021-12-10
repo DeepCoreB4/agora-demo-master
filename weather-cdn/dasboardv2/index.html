@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, viewport-fit=cover">
+    <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/weather.css">
+    <title>Deepcore Weather App - OpenWeatherMAp</title>
+    <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/weather-cdn/dasboardv2/css/weather.css" rel="stylesheet" />
+    <link href="/weather-cdn/dasboardv2/css/iframe_agora.scss" rel="stylesheet" />
+    <link type="text/css" rel="Stylesheet" href="/weather-cdn/dasboardv2/css/iframe_agora.scss" />
+</head>
+<style>
+    @font-face {
+        font-family: 'W Pomfret';
+        src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
+        font-style: normal;
+        font-weight: normal;
+        font-display: swap;
+    }
+</style>
+<body>
+    <section class="container">
+        <div class="current-info">
+            <div class="date-container">
+                <div class="time" id="time">
+                    23:59 <span id="am-pm">PM</span>
+                </div>
+                <div class="date" id="date">
+                    Donerstag, 09 Dez
+                </div>
+                <div class="others" id="current-weather-items">
+                </div>
+            </div>
+            <br>
+            <br>
+            <section class="holder holder--video">
+            <div class="place-conainer">
+                <div class="time-zone" id="time-zone">Schweiz/...</div>
+                <div id="country" class="country">CH</div>
+                </div>
+                </section>
+                <iframe name= "iframe1" id="iframe1" src="https://console.agora.io/invite?sign=ab8a2a2042488b9ee1c050383af7037c%253Ac82d5ac491624293931f88c0a17de11891bed59693d9afb9bea057a45d759f39&step=0" 
+                scrolling="no" seamless="seamless"; style="border-style: none; width: 100%; height: 560px; overflow: hidden">
+                    <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
+                    Sie können die eingebettete Seite über den folgenden Verweis aufrufen: 
+                  <a href="https://v-call.vercel.app/index.html">SELFHTML</a>
+                  </p>
+                    <script language="JavaScript">
+                        var cssLink = document.createElement("link");
+                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.scss";
+                        cssLink.rel = "stylesheet";
+                        cssLink.type = "text/css";
+                        frames['iframe1'].document.head.appendChild(cssLink);
+                    </script>                
+                    <center>
+                    <a href="https://edgar-cuppari-dev.vercel.app/"><i class="fas fa-undo">Zurück </i></a>
+                    </center>
+                </iframe>                
+                <br>
+            <center>
+            ⫹ 2022 All Rights Reserved. edgar-cuppari.dev</center>
+            <br>
+            <br>
+        </div>
+    </>
+    <div class="future-forecast">
+        <div class="today" id="current-temp">
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="other">
+                <div class="day">Monday</div>
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+        </div>
+
+        <div class="weather-forecast" id="weather-forecast">
+            <div class="weather-forecast-item">
+                <div class="day">Tue</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Wed</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Thur</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Fri</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+            <div class="weather-forecast-item">
+                <div class="day">Sat</div>
+                <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+                <div class="temp">Night - 25.6&#176; C</div>
+                <div class="temp">Day - 35.6&#176; C</div>
+            </div>
+
+        </div>
+    </div>
+    <script src="/scripts/confetti.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/weather-cdn/dasboardv2/js/weather.js"></script>
+</body>
+
+</html>
