@@ -85,7 +85,6 @@ const leave = () => {
 };
 
 const stopAudio = () => {
-  rtc.localAudioTrack.close();
   rtc.client.unpublish(rtc.localAudioTrack);
   btnMic.classList.remove("active");
 };
