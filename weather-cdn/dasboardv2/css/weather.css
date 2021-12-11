@@ -179,7 +179,7 @@ body {
     border: 0px solid #333;
 }
 
-@media only screen and (max-width:1080px) {
+@media only screen and (max-width:980px) {
 
     .container {
         padding: 20px;
@@ -226,7 +226,7 @@ body {
 
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 1400px) {
     .future-forecast {
         justify-content: start;
         align-items: none;
