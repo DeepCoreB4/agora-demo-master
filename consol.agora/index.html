@@ -4,45 +4,49 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Face to Face</title>
-    <link rel="stylesheet" href="/consol.agora/css/style.css">
-    <link href="/styles/iframe_agora.css" rel="stylesheet" />
-    <link href="/styles/styles.css" rel="stylesheet" />
-    <meta name="description"content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name='twitter:site' content='@v-call'>
-    <meta name='twitter:creator' content='@blendit4ent'>
-    <meta name='twitter:title'content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
-    <meta name='twitter:domain' content='https://v-call.vercel.app/weather-cdn/dasboardv2/'>
-    <meta name='twitter:description'content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name='twitter:image'content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Face to Face</title>
+    <meta name="description"
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@v-call" />
+    <meta name="twitter:creator" content="@blendit4ent" />
+    <meta name="twitter:title"
+        content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website" />
+    <meta name="twitter:domain" content="https://v-call.vercel.app/weather-cdn/dasboardv2/" />
+    <meta name="twitter:description"
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js" />
+    <meta name="twitter:image"
+        content="https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/consol.agora/css/style.css" rel="stylesheet" />
+    <link href="/consol.agora/css/weather.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
     <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
-    <link rel="shortcut icon" href="/assets/favicon.ico">
     <video id="background-video" autoplay loop muted poster="/assets/moshed-2021-11-10-0-40-55.gif">
-        <source src="/assets/moshed-2021-11-10-0-40-55.mp4" type="video/mp4">
-      </video>
+        <source src="/assets/moshed-2021-11-10-0-40-55.mp4" type="video/mp4" />
+    </video>
 </head>
 <style>
     @font-face {
-        font-family: 'PomfretV2';
-        src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
+        font-family: "PomfretV2";
+        src: url("https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2");
         font-style: bold;
         font-weight: 800;
         font-display: swap;
     }
+
     element.style {
         width: 50%;
         height: 100%;
-        left: 0px;
-        top: 0px;
+        left: 0 px;
+        top: 0 px;
         object-fit: cover;
-        }
+    }
 </style>
 
 <body>
     <div class="container">
-        <header><i class="fas fa-film"></i> Fucking Trial !!! </header>
+        <header><i class="fas fa-film"></i> Fucking Trial !!!</header>
 
         <section class="holder holder--video">
             <div id="remote" class="holder--video-remote waiting"></div>
@@ -67,6 +71,7 @@
     </div>
     <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.2.1.js"></script>
     <script src="/scripts/script.js"></script>
+    
 </body>
 
 </html>

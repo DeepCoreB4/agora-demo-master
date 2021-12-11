@@ -9,8 +9,6 @@
 html,
 
 body{
-    background:url('/assets/moshed-2021-11-10-0-40-55.png');
-    background-repeat: no-repeat;
     background-size:cover;
     overflow:hidden;
     height: 100vh;
@@ -19,9 +17,9 @@ body{
     font-style: normal;
 }
 
-.container{
-    padding: 20px 70px;
-    color:#fff;
+.container {
+    padding: 230px 19px;
+    color: #fff;
 }
 
 .current-info{
