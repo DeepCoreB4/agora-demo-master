@@ -22,7 +22,7 @@ html,
 
 body{
     background-size:cover;
-    overflow:hidden;
+    overflow:inherit;
     height: 100vh;
     font-family: PomfretV2;
     font-weight: normal;
@@ -30,7 +30,8 @@ body{
 }
 
 .container {
-    padding: 230px 19px;
+    margin-bottom: 2rem;
+    padding:2px 35px;
     color: #fff;
 }
 
@@ -52,7 +53,7 @@ body{
     font-size: 30px;
     margin-left: 20px;
 }
-
+ 
 .date-container .date{
     font-size: 30px;
 }
@@ -90,29 +91,28 @@ body{
     justify-content: space-between;
 }
 
-.future-forecast{
-    background: rgba(24,24,27,0.8);
-    padding: 25px;
-    position: flex;
-    bottom: 0;
+.future-forecast {
+    background: rgba(24, 24, 27, 0.8);
+    padding: 15px;
+    bottom: 0px;
     display: flex;
-    color:white;
-    width: auto;;
+    color: white;
+    width: -webkit-fill-available;
     align-items: center;
     justify-content: center;
     overflow-y: inherit;
 }
 
-.future-forecast .today{
+.future-forecast .today {
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    border: 1px solid #eee;
+    justify-content: flex-start;
+    /* border: 1px solid #eee; */
     border-radius: 10px;
-    padding:15px;
-    padding-right: 40px;
+    padding: -12px;
+    padding-right: 38px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.2)
+    background: rgba(0,0,0,0.2);
 }
 
 .future-forecast .today .day{
@@ -131,16 +131,16 @@ body{
     display: flex;
 }
 
-.weather-forecast .weather-forecast-item{
+.weather-forecast .weather-forecast-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 0 10px;
-    border: 1px solid #eee;
-    padding: 15px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.2)
+    margin: 0px 10px;
+    border: 1px solid rgb(238, 238, 238);
+    padding: 4px;
+    border-radius: 25.2px;
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .weather-forecast .weather-forecast-item .day{
@@ -155,7 +155,8 @@ body{
     font-size: 12px;
 }
 
-#iframe.top-bar {
+#iframe
+.top-bar {
     width: 100%;
     padding: 3vh ;
     padding-top: 4vh;
@@ -169,16 +170,16 @@ body{
     border: 0px solid #333;
 }
 
-@media only screen and  (max-width:1080px){
+@media only screen and  (max-width:1280px){
     
     .container{
-        padding: 20px;
+        padding: 13px;
     }
     
     .future-forecast{
         justify-content: start;
         align-items: none;
-        overflow-y: hidden;
+        overflow-y: inherit;
     }
 
     .future-forecast .today .temp{
@@ -216,10 +217,10 @@ body{
 
 }
 
-@media only screen and (max-width: 1400px){
+@media only screen and (max-width:1080px){
     .future-forecast{
-        justify-content: start;
-        align-items: none;
+        justify-content: right;
+        align-items: normal;
         overflow-x: scroll;
     }
 }

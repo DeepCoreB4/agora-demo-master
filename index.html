@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable= 1">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, user-scalable= 2">
     <meta name="description"
         content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
     <meta name="twitter:card" content="summary_large_image">
@@ -19,18 +19,16 @@
     <meta name='twitter:image'
         content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <title>Deepcore Weather App - with Agora Video Call (trial)</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
 
-    <title>Deepcore Weather App - with Agora Video Call (trial)</title>
+    
+    <link rel="stylesheet" href="/styles/iframe_agora.css">
 
-    <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/weather-cdn/dasboardv2/css/weather.css">
-
-    <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/weather.scss">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
     <video id="background-video" autoplay loop muted poster="/assets/moshed-2021-11-10-0-40-55.gif">
         <source src="/assets/moshed-2021-11-10-0-40-55.mp4" type="video/mp4">
     </video>
@@ -42,16 +40,8 @@
         font-style: bold;
         font-weight: 800;
         font-display: swap;
-    }
-
-    element.style {
-        border-style: none;
-        width: 100%;
-        height: 680px;
-        overflow: hidden;
-    }
+    };
 </style>
-
 <body>
     <div class="container">
         <div class="current-info">
@@ -86,6 +76,7 @@
         </center>
         <br>
         <br>
+        <center>
         <div class="future-forecast">
             <div class="today" id="current-temp">
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
@@ -129,6 +120,8 @@
                 </div>
             </div>
         </div>
+        </center>
+    </center>
         <script src="/weather-cdn/dasboardv2/js/weather.js"></script>
         <script src="/scripts/confetti.js"></script>
         <script src="/config.js"></script>
@@ -157,6 +150,8 @@
                     (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
             </script>
         </center>
+    <div>
+        test
+    </div>
 </body>
-
 </html>
