@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name="twitter:description"
+        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name='twitter:site' content='@v-call'>
+    <meta name='twitter:creator' content='@blendit4ent'>
+    <meta name='twitter:title' content="Breaking-Bad-Quotes - NoDrugs">
+    <meta name='twitter:domain' content='https://v-call.vercel.app/'>
+    <meta name='twitter:image'
+        content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="stylesheet" href="/consol.quotes/breakingbad/css/quotes.css">
+
+    <script src="./breakingbad/scripts/spinner.js"></script>
+    <link rel="stylesheet" href="/consol.quotes/breakingbad/css/index.css">
+
+<!-- Video Backgtound mp4/ for faster rendering-->
+    <video id="background-video" autoplay loop muted poster="/assets/moshed-2021-11-10-0-40-55.gif">
+        <source src="/assets/video/mshd-brbad_BG.mp4" type="video/mp4" />
+    </video>
+<!-- Video Backgtound mp4/ for faster rendering-->
+</head>
+<!-- API - Breaking-Bad Quotes-->
+<script src="./breakingbad/scripts/quote.js"></script>
+<style>
+    @font-face {
+        font-family: 'PomfretV2';
+        src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
+        font-style: regular;
+        font-weight: 600;
+        font-display: swap;
+    };
+</style>
+
+<body>
+    <div className="container">
+            <img 
+                src="https://upload.wikimedia.org/wikipedia/commons/7/77/Breaking_Bad_logo.svg"
+                alt="logo"/>
+            </div>
+    <header><i className="api-header"></i>GET Api - Deepcore DC Consol </header>
+    <!-- Header berreich für  next api-->
+    <table>
+        <caption>Breaking-Bad "Quotes" 2022</caption>
+        <tr>
+            <td align="right">80</td>
+            <td>You&#39;re an insane, degenerate piece of filth, and you deserve to die.</td>
+            <td>Walter White</td>
+            <td>Breaking Bad</td>
+        </tr>
+        <tr>
+            <td align="right">81</td>
+            <td>You two suck at peddling meth.</td>
+            <td>Saul Goodman</td>
+            <td>Breaking Bad</td>
+        </tr>
+        <tr>
+            <td align="right">82</td>
+            <td>Mas his death satisfy you.</td>
+            <td>Gus Fring</td>
+            <td>Breaking Bad</td>
+        </tr>
+        <tr>
+            <td align="right">83</td>
+            <td>La familia es todo.</td>
+            <td>Hector Salamanca</td>
+            <td>Breaking Bad</td>
+        </tr>
+        <tr>
+            <td align="right">84</td>
+            <td>I will kill your wife, I will kill your son, I will kill your infant daughter.</td>
+            <td>Gus Fring</td>
+            <td>Breaking Bad</td>
+        </tr>
+        <tr>
+            <td align="right">85</td>
+            <td>It’s discreet, like a stripper pole in a mosque.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">86</td>
+            <td>I&#39;m a lawyer, not a criminal</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">87</td>
+            <td>Only two things I know about Albuquerque – Bugs Bunny should’ve taken a left turn there. And give me a
+                hundred
+                tries, I’ll never be able spell it.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">88</td>
+            <td>I am not good at Building Shit , you know I’m excellent at Tearing it down</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">89</td>
+            <td>I know what stopped me. And you know what? It’s never stopping me again.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">90</td>
+            <td>Perfection is the Enemy of Perfectly Adequate</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">91</td>
+            <td>Hail Satan. I submit to the dark side.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">92</td>
+            <td>There’s no honor among thieves… except for us of course</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">93</td>
+            <td>Some people are immune to good advice.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">94</td>
+            <td>Money is the Point.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">95</td>
+            <td>You Know the expression it’s been a pleasure... well it hasn’t.</td>
+            <td>Mike Ehrmantraut</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">96</td>
+            <td>Winning Doesn’t Always Mean Getting a Favorable Verdict at Trial.</td>
+            <td>Kim Wexler</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">97</td>
+            <td>You know what happened. The question is, can you live with it?</td>
+            <td>Mike Ehrmantraut</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">98</td>
+            <td>Slippin’ Jimmy with a law degree is like a chimp with a machine gun</td>
+            <td>Chuck McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">99</td>
+            <td>No one ever accused you of being lazy.. every other sin in the book , but not that one.</td>
+            <td>Chuck McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">100</td>
+            <td>FYI, old people adore me.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">101</td>
+            <td>I&#39;m gonna be a damn good lawyer, and people are gonna know about it</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        <tr>
+            <td align="right">102</td>
+            <td>S&#39;all good, man.</td>
+            <td>Jimmy McGill</td>
+            <td>Better Call Saul</td>
+        </tr>
+        </tbody>
+    </table>
+    </table>
+</body>
+
+</html>

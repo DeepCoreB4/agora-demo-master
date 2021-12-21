@@ -16,7 +16,7 @@ html,
   width: 100vw;
   height: 100vh;
   -o-object-fit: cover;
-     object-fit: cover;
+    object-fit: cover;
   position: fixed;
   left: 0;
   right: 0;
