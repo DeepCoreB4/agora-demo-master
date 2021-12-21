@@ -1,46 +1,43 @@
 <!DOCTYPE html>
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0">
-    <meta name="description"
-        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.5, user-scalable=M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ">
+    <meta name="description"content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
     <meta name="twitter:card" content="summary_large_image">
     <meta name='twitter:site' content='@v-call'>
     <meta name='twitter:creator' content='@blendit4ent'>
-    <meta name='twitter:title'
-        content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
+    <meta name='twitter:title'content="V-Call, hei nice to see you! No Telegram/ No WatsApp, just for Friends on my Website">
     <meta name='twitter:domain' content='https://v-call.vercel.app/weather-cdn/dasboardv2/'>
-    <meta name='twitter:description'
-        content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
-    <meta name='twitter:image'
-        content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
+    <meta name='twitter:description'content="V-Call App ist eine Web-Anwendung um Video Telefonie zu tätigen! Entwickelt mit AgoraRTC_N-4.js">
+    <meta name='twitter:image'content='https://raw.githubusercontent.com/DeepCoreB4/agora-demo-master/master/assets/v-call-ogimage.jpg'>
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <title>Deepcore Weather App - with Agora Video Call (trial)</title>
     <link rel="shortcut icon" href="/assets/favicon.ico">
-
-    
-    <link rel="stylesheet" href="/styles/iframe_agora.css">
-
-    <link rel="stylesheet" href="/style/weather.scss">
-
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Deepcore Weather App - with Agora Video Call (trial)</title>
     <script src="https://kit.fontawesome.com/c8500fcdd6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/weather-cdn/css/weather.css">
+    <link rel="stylesheet" href="/weather-cdn/css/iframe_agora.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">    
     <video id="background-video" autoplay loop muted poster="/assets/moshed-2021-11-10-0-40-55.gif">
-        <source src="/assets/video/moshed-2021-11-10-0-40-55.mp4" type="video/mp4">
-    </video>
+        <source src="/assets/video/moshed-2021-11-10-0-40-55.mp4" type="video/mp4"></video>
 </head>
 <style>
     @font-face {
         font-family: 'PomfretV2';
         src: url('https://djr.com/assets/fotmc/samples/Pomfret-Regular.woff2');
-        font-style: bold;
-        font-weight: 800;
+        font-style: itlaic;
+        font-weight: normal;
         font-display: swap;
     };
+    element.style {
+    border-style: none;
+    width: 100%;
+    height: 680px;
+    overflow: hidden;
+}
 </style>
+
 <body>
     <div class="container">
         <div class="current-info">
@@ -67,15 +64,21 @@
                     style="border-style: none; width: 100%; height: 560px; overflow: hidden">
                     <p>Ihr Browser kann leider keine eingebetteten Frames anzeigen:
                         Sie können die eingebettete Seite über den folgenden Verweis aufrufen:
-                        <a href="https://v-call.vercel.app/">SELFHTML</a>
+                        <a href="https://v-call.vercel.app/index.html">SELFHTML</a>
                     </p>
+                    <script language="JavaScript">
+                        var cssLink = document.createElement("link");
+                        cssLink.href = "/weather-cdn/dasboardv2/css/ifram_agora.css";
+                        cssLink.rel = "stylesheet";
+                        cssLink.type = "text/css";
+                        frames['iframe1'].document.head.appendChild(cssLink);
+                    </script>
                 </iframe>
 
             </section>
         </center>
         <br>
         <br>
-        <center>
         <div class="future-forecast">
             <div class="today" id="current-temp">
                 <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
@@ -119,14 +122,10 @@
                 </div>
             </div>
         </div>
-        </center>
-    </center>
         <script src="/weather-cdn/dasboardv2/js/weather.js"></script>
         <script src="/scripts/confetti.js"></script>
-        <script src="/config.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
-            integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://download.agora.io/sdk/release/AgoraRTC_N-4.2.1.js"></script>
         <center>
             <script>
                 // confetti scrip starten...
@@ -149,8 +148,6 @@
                     (); // Wenn wir nicht wollen, dass die Animation aufhört und unendlich weiter läuft(schleife bzw. loop), könen wir einfach die Stoppfunktion entfernen 😎
             </script>
         </center>
-    <div>
-        test
-    </div>
 </body>
+
 </html>
